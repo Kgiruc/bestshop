@@ -1,0 +1,33 @@
+.footer {
+  margin-top: 59px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 89px;
+  box-shadow: 0px -5px 40px #00000029;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info{
+    display: flex;
+    flex-flow: column;
+
+    :last-child {
+      font-size: 11px;
+      font-family: $font-open-sans;
+      line-height: 15px;
+      letter-spacing: 0;
+      color: $color-grey;
+      margin-top: 6.52px;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
