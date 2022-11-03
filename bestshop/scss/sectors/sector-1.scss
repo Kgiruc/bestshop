@@ -32,6 +32,8 @@
 
   &__image {
     width: 100%;
+    max-width: 1735px;
+    margin: auto;
     height: auto;
     @include s {
       width: 220%;
