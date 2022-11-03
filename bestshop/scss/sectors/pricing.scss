@@ -23,6 +23,7 @@
   flex-flow: column;
   align-items: center;
   text-align: center;
+  border-radius: 18px;
 }
 
 .pricing__details {
@@ -59,6 +60,10 @@
       height: 11px;
       margin-right: 10px;
     }
+
+    &:last-child {
+      margin-bottom: 55px;
+    }
   }
 
   .pricing__item--not {
@@ -70,11 +75,50 @@
   }
 }
 
+.pricing__box {
+  position: relative;
 
+  a {
+    position: absolute;
+    bottom: -25px;
+  }
 
+  &--basic {
+    border: 1px solid $color-pink;
 
+    .pricing__price {
+      color: $color-pink;
+    }
+  }
 
+  &--professional {
+    zoom: 1.1;
+    border: 1px solid $color-1;
+    box-shadow: 5px 10px 27px $color-1-shadow;
+    margin-top: -20px;
 
+    .pricing__price {
+      color: $color-1;
+      margin-bottom: 5px;
+    }
 
+    .pricing__limited {
+      margin-bottom: 61px;
+    }
 
+  }
+
+  &--premium {
+    border: 1px solid $color-green;
+
+    .pricing__price {
+      color: $color-green;
+      margin-bottom: 5px;
+    }
+
+    .pricing__limited {
+      margin-bottom: 61px;
+    }
+  }
+}
 

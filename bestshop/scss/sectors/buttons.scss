@@ -1,5 +1,4 @@
 .btn {
-
   color: white;
   font-weight: bold;
   display: inline-block;
@@ -7,19 +6,15 @@
   border-radius: $button-radius;
   border: none;
 
-
-
   &--primary {
     background-color: $color-1;
     border-radius: $button-radius;
     box-shadow: 3px 10px 14px $color-1-shadow;
   }
 
-
   &--redish {
     background-color: $color-pink;
   }
-
 
   &--green {
     background-color: $color-green;
