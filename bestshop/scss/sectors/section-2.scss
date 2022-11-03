@@ -1,11 +1,9 @@
 .statistics {
   margin-top: 100px;
 
-
   @include s{
     margin-top: 50px;
   }
-
 
 
   &__title {
@@ -25,8 +23,6 @@
       flex-direction: column;
     }
   }
-
-
 
   &__single {
     max-width: 160px;
@@ -49,7 +45,6 @@
         background-color: $color-pink;
       }
 
-
       .statistics__img {
         top: 0;
         left: 45%;
@@ -57,11 +52,9 @@
     }
 
     &:nth-child(2) {
-
       .statistics__circle {
         background-color: $color-1;
       }
-
 
       .statistics__img {
         top: 14px;
@@ -69,13 +62,10 @@
       }
     }
 
-
-
     &:nth-child(3) {
       .statistics__circle {
         background-color: $color-green;
       }
-
 
       .statistics__img {
         top: 6px;
@@ -84,7 +74,6 @@
     }
   }
 
-
   &__circle {
     border-radius: 50%;
     width: 63px;
@@ -92,11 +81,9 @@
     position: relative;
   }
 
-
   &__img {
     position: absolute;
   }
-
 
   &__number {
     font-size: 1.25rem;
@@ -104,7 +91,6 @@
     letter-spacing: 0.1875rem;
     margin-top: 13px;
   }
-
 
   &__description {
     color: $color-grey;
