@@ -6,6 +6,15 @@
     font-size: 36px;
     text-align: center;
     margin-bottom: 70px;
+    line-height: 42px;
+  }
+
+  @include s {
+    margin-top: 53.54px;
+
+    h2 {
+      margin-bottom: 14px;
+    }
   }
 }
 
@@ -14,6 +23,11 @@
   flex-flow: row;
   gap: 59px;
   justify-content: center;
+
+  @include s {
+    flex-flow: column;
+    align-items: center;
+  }
 }
 
 .pricing__box {
@@ -24,6 +38,13 @@
   align-items: center;
   text-align: center;
   border-radius: 18px;
+
+  @include s {
+    width: 293px;
+    height: 251px;
+    flex-flow: row;
+    justify-content: space-around;
+  }
 }
 
 .pricing__details {
@@ -52,6 +73,10 @@
   font-family: $font-open-sans;
   letter-spacing: 0;
 
+  @include s {
+    text-align: left;
+  }
+
   .pricing__item {
 
     &::before {
@@ -63,6 +88,10 @@
 
     &:last-child {
       margin-bottom: 55px;
+
+      @include s {
+        margin-bottom: 25px;
+      }
     }
   }
 

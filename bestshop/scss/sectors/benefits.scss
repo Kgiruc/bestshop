@@ -77,7 +77,7 @@
       width: 327.64px;
       margin-top: 50px;
 
-      @include s {
+      @include ms {
         display: none;
       }
     }
@@ -181,9 +181,11 @@
   flex-flow: row;
   gap: 60px;
   @include ms {
-    gap: 0;
+    gap: 10px;
+    justify-content: space-between;
   }
   @include s {
+    gap: 0;
     flex-flow: column;
     align-items: center;
   }
@@ -192,7 +194,11 @@
 .benefits__single--solo {
   width: 623.04px;
 
-  @include ms {
+  @include ms{
+  width: 45vw;
+  }
+
+  @include s {
     width: 315px;
     height: 260px;
 
