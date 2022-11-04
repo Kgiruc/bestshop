@@ -37,6 +37,11 @@
   &__nav {
     display: flex;
 
+    @include ms {
+      .nav__element {
+        padding: 0;
+      }
+    }
     @include s {
       position: absolute;
       left: 0;
@@ -55,6 +60,10 @@
       .nav__link {
         display: block;
         padding: 14px 20px;
+
+        &:hover {
+          border: none;
+        }
       }
     }
   }

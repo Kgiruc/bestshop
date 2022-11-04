@@ -23,12 +23,9 @@ h2 {
 
 @include ms {
   width: 100%;
-  padding: 0;
+  padding: 0 30px;
 }
 }
-
-
-
 
 .logo {
   font-family: $font-raleway;
